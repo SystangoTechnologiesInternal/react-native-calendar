@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     marginVertical: 5,
-    color: '#cccccc',
+    color: '#000000'//'#cccccc',
   },
   weekRow: {
     flexDirection: 'row',
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   weekendDayText: {
-    color: '#cccccc',
+    color: '#000000'//'#cccccc',
   },
 });
 
