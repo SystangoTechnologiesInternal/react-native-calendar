@@ -283,7 +283,17 @@ export default class Calendar extends Component {
       renderIndex += 1;
     } while (true)
     const containerStyle = [styles.monthContainer, this.props.customStyle.monthContainer, {width:this.props.width}];
-    return <View key={`${startOfArgMoment.format('YYYY-MM-DD')}-${calFormat}`} style={containerStyle}>{weekRows}</View>;
+    const{width,height} = Dimensions.get('window')
+    var returnableData = (width>height)? <ScrollView
+      vertical      
+      scrollEnabled
+      scrollEventThrottle={1000}
+      showsHorizontalScrollIndicator={false}
+      automaticallyAdjustContentInsets={false}
+    > 
+    <View key={`${startOfArgMoment.format('YYYY-MM-DD')}-${calFormat}`} style={containerStyle}>{weekRows}</View>
+    </ScrollView> : <View key={`${startOfArgMoment.format('YYYY-MM-DD')}-${calFormat}`} style={containerStyle}>{weekRows}</View>;
+    return returnableData;
   }
 
   renderDay (props) {
@@ -360,7 +370,8 @@ export default class Calendar extends Component {
     const eventDatesMap = this.prepareEventDates(this.props.eventDates, this.props.events);
     const numOfWeeks = this.props.calendarFormat === 'weekly' ? 1 :
       getNumberOfWeeks(this.state.currentMonthMoment, this.props.weekStart);
-
+    const{width,height} = Dimensions.get('window')
+    var numOfRows = (width>height) ? (numOfWeeks-1) :numOfWeeks
     return (
       <View style={[styles.calendarContainer, this.props.customStyle.calendarContainer]}>
         {this.renderTopBar()}
@@ -377,7 +388,7 @@ export default class Calendar extends Component {
               automaticallyAdjustContentInsets={false}
               onMomentumScrollEnd={(event) => this.scrollEnded(event)}
               style={{
-                height: this.state.rowHeight ? this.state.rowHeight * numOfWeeks : null,
+                height: this.state.rowHeight ? this.state.rowHeight * numOfRows : null,
               }}
              >
               {calendarDates.map((date) => this.renderCalendarView(this.props.calendarFormat, moment(date), eventDatesMap))}

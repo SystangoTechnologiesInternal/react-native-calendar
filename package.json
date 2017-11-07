@@ -3,6 +3,27 @@
     [
       "react-native-calendar@git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
       "/Users/stplmacmini15/Documents/Projects/BVP/BatterVsPitcher"
+    ],
+    [
+      {
+        "raw": "react-native-calendar@git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+        "scope": null,
+        "escapedName": "react-native-calendar",
+        "name": "react-native-calendar",
+        "rawSpec": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+        "spec": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:SystangoTechnologiesInternal/react-native-calendar.git",
+          "sshUrl": "git+ssh://git@github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+          "httpsUrl": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+          "gitUrl": "git://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+          "shortcut": "github:SystangoTechnologiesInternal/react-native-calendar",
+          "directUrl": "https://raw.githubusercontent.com/SystangoTechnologiesInternal/react-native-calendar/master/package.json"
+        }
+      },
+      "/Users/macbook08/Projects/BatterVsPitcher/AppCode/BatterVsPitcher"
     ]
   ],
   "_from": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
@@ -14,34 +35,34 @@
   "_location": "/react-native-calendar",
   "_phantomChildren": {},
   "_requested": {
+    "raw": "react-native-calendar@git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+    "scope": null,
+    "escapedName": "react-native-calendar",
+    "name": "react-native-calendar",
+    "rawSpec": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+    "spec": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+    "type": "hosted",
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/SystangoTechnologiesInternal/react-native-calendar/master/package.json",
-      "gitUrl": "git://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
-      "httpsUrl": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
-      "shortcut": "github:SystangoTechnologiesInternal/react-native-calendar",
+      "type": "github",
       "ssh": "git@github.com:SystangoTechnologiesInternal/react-native-calendar.git",
       "sshUrl": "git+ssh://git@github.com/SystangoTechnologiesInternal/react-native-calendar.git",
-      "type": "github"
-    },
-    "name": "react-native-calendar",
-    "raw": "react-native-calendar@git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
-    "rawSpec": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
-    "scope": null,
-    "spec": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
-    "type": "hosted"
+      "httpsUrl": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+      "gitUrl": "git://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
+      "shortcut": "github:SystangoTechnologiesInternal/react-native-calendar",
+      "directUrl": "https://raw.githubusercontent.com/SystangoTechnologiesInternal/react-native-calendar/master/package.json"
+    }
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git#68a3fff6544c3f95b751c9accc8eb5ae012ff864",
-  "_shasum": "16050204122ed717a7f10afd0066b33936659020",
+  "_resolved": "git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git#e407d5eefe05a85218030ca94e66bb880c9d0242",
+  "_shasum": "66b6667da291d94d6a4ad49342d6ec152fdc13b6",
   "_shrinkwrap": null,
   "_spec": "react-native-calendar@git+https://github.com/SystangoTechnologiesInternal/react-native-calendar.git",
-  "_where": "/Users/stplmacmini15/Documents/Projects/BVP/BatterVsPitcher",
+  "_where": "/Users/macbook08/Projects/BatterVsPitcher/AppCode/BatterVsPitcher",
   "author": {
-    "email": "casheghian@gmail.com",
     "name": "Christopher Dro",
+    "email": "casheghian@gmail.com",
     "url": "https://github.com/christopherdro"
   },
   "bugs": {
@@ -50,8 +71,8 @@
   "bundleDependencies": false,
   "contributors": [
     {
-      "email": "coderdave@gmail.com",
       "name": "David Sanderson",
+      "email": "coderdave@gmail.com",
       "url": "https://github.com/coderdave"
     }
   ],

@@ -5,6 +5,7 @@ const DEVICE_WIDTH = Dimensions.get('window').width;
 const styles = StyleSheet.create({
   calendarContainer: {
     backgroundColor: '#f7f7f7',
+    marginTop: -20        
   },
   monthContainer: {
     width: DEVICE_WIDTH,
